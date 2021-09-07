@@ -31,13 +31,13 @@ namespace Cliente_TulaWoW.vista.user_controls
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCShopItem_rc));
             this.gepnl_fondo = new Guna.UI.WinForms.GunaElipsePanel();
-            this.gtpbox_img = new Guna.UI.WinForms.GunaTransfarantPictureBox();
-            this.gtpbox_habilidades = new Guna.UI.WinForms.GunaTransfarantPictureBox();
-            this.glbl_nombre = new Guna.UI.WinForms.GunaLabel();
             this.ggbtn_comprar = new Guna.UI.WinForms.GunaGradientButton();
+            this.glbl_nombre = new Guna.UI.WinForms.GunaLabel();
+            this.gtpbox_habilidades = new Guna.UI.WinForms.GunaTransfarantPictureBox();
+            this.gtpbox_img = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gepnl_fondo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gtpbox_img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gtpbox_habilidades)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gtpbox_img)).BeginInit();
             this.SuspendLayout();
             // 
             // gepnl_fondo
@@ -54,48 +54,11 @@ namespace Cliente_TulaWoW.vista.user_controls
             this.gepnl_fondo.Size = new System.Drawing.Size(400, 200);
             this.gepnl_fondo.TabIndex = 0;
             // 
-            // gtpbox_img
-            // 
-            this.gtpbox_img.BackColor = System.Drawing.Color.Transparent;
-            this.gtpbox_img.BaseColor = System.Drawing.Color.Black;
-            this.gtpbox_img.Image = ((System.Drawing.Image)(resources.GetObject("gtpbox_img.Image")));
-            this.gtpbox_img.Location = new System.Drawing.Point(208, 0);
-            this.gtpbox_img.Margin = new System.Windows.Forms.Padding(0);
-            this.gtpbox_img.MaximumSize = new System.Drawing.Size(192, 248);
-            this.gtpbox_img.MinimumSize = new System.Drawing.Size(192, 248);
-            this.gtpbox_img.Name = "gtpbox_img";
-            this.gtpbox_img.Size = new System.Drawing.Size(192, 248);
-            this.gtpbox_img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gtpbox_img.TabIndex = 0;
-            this.gtpbox_img.TabStop = false;
-            // 
-            // gtpbox_habilidades
-            // 
-            this.gtpbox_habilidades.BaseColor = System.Drawing.Color.Black;
-            this.gtpbox_habilidades.Image = ((System.Drawing.Image)(resources.GetObject("gtpbox_habilidades.Image")));
-            this.gtpbox_habilidades.Location = new System.Drawing.Point(20, 60);
-            this.gtpbox_habilidades.Name = "gtpbox_habilidades";
-            this.gtpbox_habilidades.Size = new System.Drawing.Size(119, 57);
-            this.gtpbox_habilidades.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.gtpbox_habilidades.TabIndex = 0;
-            this.gtpbox_habilidades.TabStop = false;
-            // 
-            // glbl_nombre
-            // 
-            this.glbl_nombre.AutoSize = true;
-            this.glbl_nombre.Font = new System.Drawing.Font("Arial Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.glbl_nombre.ForeColor = System.Drawing.Color.White;
-            this.glbl_nombre.Location = new System.Drawing.Point(13, 10);
-            this.glbl_nombre.Name = "glbl_nombre";
-            this.glbl_nombre.Size = new System.Drawing.Size(153, 38);
-            this.glbl_nombre.TabIndex = 1;
-            this.glbl_nombre.Text = "DRAENEI";
-            this.glbl_nombre.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAlias;
-            // 
             // ggbtn_comprar
             // 
             this.ggbtn_comprar.AnimationHoverSpeed = 0.07F;
             this.ggbtn_comprar.AnimationSpeed = 0.03F;
+            this.ggbtn_comprar.BackColor = System.Drawing.Color.Transparent;
             this.ggbtn_comprar.BaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(75)))), ((int)(((byte)(21)))));
             this.ggbtn_comprar.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(47)))), ((int)(((byte)(1)))));
             this.ggbtn_comprar.BorderColor = System.Drawing.Color.Black;
@@ -113,12 +76,50 @@ namespace Cliente_TulaWoW.vista.user_controls
             this.ggbtn_comprar.OnHoverForeColor = System.Drawing.Color.White;
             this.ggbtn_comprar.OnHoverImage = null;
             this.ggbtn_comprar.OnPressedColor = System.Drawing.Color.Black;
+            this.ggbtn_comprar.OnPressedDepth = 10;
             this.ggbtn_comprar.Radius = 20;
             this.ggbtn_comprar.Size = new System.Drawing.Size(100, 40);
             this.ggbtn_comprar.TabIndex = 2;
             this.ggbtn_comprar.Text = "COMPRAR";
             this.ggbtn_comprar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.ggbtn_comprar.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAlias;
+            this.ggbtn_comprar.Click += new System.EventHandler(this.ggbtn_comprar_Click);
+            // 
+            // glbl_nombre
+            // 
+            this.glbl_nombre.AutoSize = true;
+            this.glbl_nombre.Font = new System.Drawing.Font("Arial Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.glbl_nombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.glbl_nombre.Location = new System.Drawing.Point(13, 10);
+            this.glbl_nombre.Name = "glbl_nombre";
+            this.glbl_nombre.Size = new System.Drawing.Size(131, 38);
+            this.glbl_nombre.TabIndex = 1;
+            this.glbl_nombre.Text = "Draenei";
+            this.glbl_nombre.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAlias;
+            // 
+            // gtpbox_habilidades
+            // 
+            this.gtpbox_habilidades.BaseColor = System.Drawing.Color.Black;
+            this.gtpbox_habilidades.Image = ((System.Drawing.Image)(resources.GetObject("gtpbox_habilidades.Image")));
+            this.gtpbox_habilidades.Location = new System.Drawing.Point(20, 60);
+            this.gtpbox_habilidades.Name = "gtpbox_habilidades";
+            this.gtpbox_habilidades.Size = new System.Drawing.Size(119, 57);
+            this.gtpbox_habilidades.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.gtpbox_habilidades.TabIndex = 0;
+            this.gtpbox_habilidades.TabStop = false;
+            // 
+            // gtpbox_img
+            // 
+            this.gtpbox_img.BackColor = System.Drawing.Color.Transparent;
+            this.gtpbox_img.BaseColor = System.Drawing.Color.Black;
+            this.gtpbox_img.Image = ((System.Drawing.Image)(resources.GetObject("gtpbox_img.Image")));
+            this.gtpbox_img.Location = new System.Drawing.Point(200, 0);
+            this.gtpbox_img.Margin = new System.Windows.Forms.Padding(0);
+            this.gtpbox_img.Name = "gtpbox_img";
+            this.gtpbox_img.Size = new System.Drawing.Size(200, 248);
+            this.gtpbox_img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gtpbox_img.TabIndex = 0;
+            this.gtpbox_img.TabStop = false;
             // 
             // UCShopItem_rc
             // 
@@ -129,10 +130,11 @@ namespace Cliente_TulaWoW.vista.user_controls
             this.Controls.Add(this.gepnl_fondo);
             this.Name = "UCShopItem_rc";
             this.Size = new System.Drawing.Size(400, 248);
+            this.Load += new System.EventHandler(this.UCShopItem_rc_Load);
             this.gepnl_fondo.ResumeLayout(false);
             this.gepnl_fondo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gtpbox_img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gtpbox_habilidades)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gtpbox_img)).EndInit();
             this.ResumeLayout(false);
 
         }
