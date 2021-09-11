@@ -96,6 +96,12 @@
     <Compile Include="vista\user_controls\UCNavBar_button.Designer.cs">
       <DependentUpon>UCNavBar_button.cs</DependentUpon>
     </Compile>
+    <Compile Include="vista\user_controls\UCShopItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vista\user_controls\UCShopItem.Designer.cs">
+      <DependentUpon>UCShopItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="vista\user_controls\UCShopItem_rc.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vista\user_controls\UCNavBar_button.resx">
       <DependentUpon>UCNavBar_button.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\user_controls\UCShopItem.resx">
+      <DependentUpon>UCShopItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vista\user_controls\UCShopItem_rc.resx">
       <DependentUpon>UCShopItem_rc.cs</DependentUpon>
