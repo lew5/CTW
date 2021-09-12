@@ -96,6 +96,24 @@
     <Compile Include="vista\user_controls\UCNavBar_button.Designer.cs">
       <DependentUpon>UCNavBar_button.cs</DependentUpon>
     </Compile>
+    <Compile Include="vista\user_controls\UCSeccionCambios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vista\user_controls\UCSeccionCambios.Designer.cs">
+      <DependentUpon>UCSeccionCambios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\user_controls\UCSeccionJuego.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vista\user_controls\UCSeccionJuego.Designer.cs">
+      <DependentUpon>UCSeccionJuego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\user_controls\UCSeccionTienda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vista\user_controls\UCSeccionTienda.Designer.cs">
+      <DependentUpon>UCSeccionTienda.cs</DependentUpon>
+    </Compile>
     <Compile Include="vista\user_controls\UCShopItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -132,6 +150,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vista\user_controls\UCNavBar_button.resx">
       <DependentUpon>UCNavBar_button.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\user_controls\UCSeccionCambios.resx">
+      <DependentUpon>UCSeccionCambios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\user_controls\UCSeccionJuego.resx">
+      <DependentUpon>UCSeccionJuego.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vista\user_controls\UCShopItem.resx">
       <DependentUpon>UCShopItem.cs</DependentUpon>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cliente_TulaWoW.vista.user_controls;
+using System;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -40,18 +41,17 @@ namespace Cliente_TulaWoW
 
         private void ucNavBar1_ButtonJuegoClick(object sender, EventArgs e)
         {
-            MessageBox.Show("juego");
-            //mostrarSeccionUC<cpnl_seccionContenedor>();
+            mostrarSeccionUC<UCSeccionJuego>(cpnl_seccionContenedor);
         }
 
         private void ucNavBar1_ButtonCambiosClick(object sender, EventArgs e)
         {
-            MessageBox.Show("cambios");
+            mostrarSeccionUC<UCSeccionCambios>(cpnl_seccionContenedor);
         }
 
         private void ucNavBar1_ButtonTiendaClick(object sender, EventArgs e)
         {
-            MessageBox.Show("tienda");
+            mostrarSeccionUC<UCSeccionTienda>(cpnl_seccionContenedor);
         }
 
         //private void button1_Click_1(object sender, EventArgs e)

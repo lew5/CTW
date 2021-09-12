@@ -87,7 +87,7 @@ namespace Cliente_TulaWoW.vista.user_controls
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.glpnl_contenedor);
-            this.Margin = new System.Windows.Forms.Padding(0);
+            this.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.MaximumSize = new System.Drawing.Size(800, 10000);
             this.MinimumSize = new System.Drawing.Size(800, 0);
             this.Name = "UCChangelogCard";
