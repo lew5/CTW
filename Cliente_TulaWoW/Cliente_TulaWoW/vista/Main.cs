@@ -1,8 +1,4 @@
-﻿
-using Cliente_TulaWoW.vista.user_controls;
-using HtmlAgilityPack;
-using System;
-using System.Drawing;
+﻿using System;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -11,13 +7,51 @@ namespace Cliente_TulaWoW
     public partial class Main : Form
     {
 
-        private string url = "http://www.tula-wow.com/changelog";
+        //private string url = "http://www.tula-wow.com/changelog";
+
+        private void mostrarSeccionUC<UC>(Control p) where UC : UserControl, new()
+        {
+            UserControl uc;
+            uc = p.Controls.OfType<UC>().FirstOrDefault();
+            if (uc == null)
+            {
+                uc = new UC();
+                p.Controls.Add(uc);
+                uc.Dock = DockStyle.Fill;
+                uc.BringToFront();
+                foreach (Control c in p.Controls)
+                    if (uc.Name != c.Name)
+                    {
+                        c.Dispose();
+                    }
+            }
+            else
+            {
+                uc.BringToFront();
+            }
+        }
 
         public Main()
         {
             InitializeComponent();
             //this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             //this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+        }
+
+        private void ucNavBar1_ButtonJuegoClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("juego");
+            //mostrarSeccionUC<cpnl_seccionContenedor>();
+        }
+
+        private void ucNavBar1_ButtonCambiosClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("cambios");
+        }
+
+        private void ucNavBar1_ButtonTiendaClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("tienda");
         }
 
         //private void button1_Click_1(object sender, EventArgs e)

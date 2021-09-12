@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -6,9 +7,10 @@ namespace Cliente_TulaWoW.vista.user_controls
 {
     public partial class UCNavBar_button : UserControl
     {
-
         private string txt = "JUEGO";
         private bool check = false;
+
+        public event EventHandler ButtonClick;
         public UCNavBar_button()
         {
             InitializeComponent();
@@ -65,6 +67,7 @@ namespace Cliente_TulaWoW.vista.user_controls
                 NavBarbtn.Check = false;
             }
             this.Check = true;
+            ButtonClick?.Invoke(this, e);
         }
     }
 }
