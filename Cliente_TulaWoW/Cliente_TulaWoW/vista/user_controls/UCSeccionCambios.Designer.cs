@@ -30,9 +30,9 @@ namespace Cliente_TulaWoW.vista.user_controls
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.customFlowLayoutPanel1 = new Cliente_TulaWoW.CustomFlowLayoutPanel();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.customFlowLayoutPanel1 = new Cliente_TulaWoW.CustomFlowLayoutPanel();
             this.SuspendLayout();
             // 
             // button1
@@ -44,15 +44,6 @@ namespace Cliente_TulaWoW.vista.user_controls
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // customFlowLayoutPanel1
-            // 
-            this.customFlowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.customFlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customFlowLayoutPanel1.Location = new System.Drawing.Point(100, 30);
-            this.customFlowLayoutPanel1.Name = "customFlowLayoutPanel1";
-            this.customFlowLayoutPanel1.Size = new System.Drawing.Size(824, 476);
-            this.customFlowLayoutPanel1.TabIndex = 0;
             // 
             // button2
             // 
@@ -73,6 +64,15 @@ namespace Cliente_TulaWoW.vista.user_controls
             this.button3.Text = "down";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // customFlowLayoutPanel1
+            // 
+            this.customFlowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.customFlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customFlowLayoutPanel1.Location = new System.Drawing.Point(100, 30);
+            this.customFlowLayoutPanel1.Name = "customFlowLayoutPanel1";
+            this.customFlowLayoutPanel1.Size = new System.Drawing.Size(824, 476);
+            this.customFlowLayoutPanel1.TabIndex = 0;
             // 
             // UCSeccionCambios
             // 

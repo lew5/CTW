@@ -31,25 +31,23 @@ namespace Cliente_TulaWoW.vista.user_controls
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCSeccionJuego));
             this.ggbtn_jugar = new Guna.UI.WinForms.GunaGradientButton();
-            this.glpnl_video = new Guna.UI.WinForms.GunaLinePanel();
-            this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
+            this.gunaLinePanel3 = new Guna.UI.WinForms.GunaLinePanel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gtpbox_azerothcoreBtn = new Guna.UI.WinForms.GunaTransfarantPictureBox();
+            this.gtpbox_ajustesBtn = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaLinePanel2 = new Guna.UI.WinForms.GunaLinePanel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaTransfarantPictureBox2 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
-            this.gunaLinePanel3 = new Guna.UI.WinForms.GunaLinePanel();
-            this.gunaTransfarantPictureBox3 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gtpbox_ajustesBtn = new Guna.UI.WinForms.GunaTransfarantPictureBox();
-            this.gtpbox_azerothcoreBtn = new Guna.UI.WinForms.GunaTransfarantPictureBox();
-            this.glpnl_video.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
+            this.glpnl_video = new Guna.UI.WinForms.GunaLinePanel();
+            this.gtpbox_playvideo = new Guna.UI.WinForms.GunaTransfarantPictureBox();
+            this.gunaLinePanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gtpbox_azerothcoreBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gtpbox_ajustesBtn)).BeginInit();
             this.gunaLinePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox2)).BeginInit();
-            this.gunaLinePanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gtpbox_ajustesBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gtpbox_azerothcoreBtn)).BeginInit();
+            this.glpnl_video.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gtpbox_playvideo)).BeginInit();
             this.SuspendLayout();
             // 
             // ggbtn_jugar
@@ -83,37 +81,68 @@ namespace Cliente_TulaWoW.vista.user_controls
             this.ggbtn_jugar.Text = "JUGAR";
             this.ggbtn_jugar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.ggbtn_jugar.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAlias;
+            this.ggbtn_jugar.Click += new System.EventHandler(this.ggbtn_jugar_Click);
             // 
-            // glpnl_video
+            // gunaLinePanel3
             // 
-            this.glpnl_video.BackColor = System.Drawing.Color.Transparent;
-            this.glpnl_video.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("glpnl_video.BackgroundImage")));
-            this.glpnl_video.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.glpnl_video.Controls.Add(this.gunaTransfarantPictureBox1);
-            this.glpnl_video.LineBottom = 1;
-            this.glpnl_video.LineColor = System.Drawing.Color.Black;
-            this.glpnl_video.LineLeft = 1;
-            this.glpnl_video.LineRight = 1;
-            this.glpnl_video.LineStyle = System.Windows.Forms.BorderStyle.None;
-            this.glpnl_video.LineTop = 1;
-            this.glpnl_video.Location = new System.Drawing.Point(100, 67);
-            this.glpnl_video.Margin = new System.Windows.Forms.Padding(0);
-            this.glpnl_video.Name = "glpnl_video";
-            this.glpnl_video.Padding = new System.Windows.Forms.Padding(1);
-            this.glpnl_video.Size = new System.Drawing.Size(500, 281);
-            this.glpnl_video.TabIndex = 5;
+            this.gunaLinePanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.gunaLinePanel3.Controls.Add(this.gunaLabel1);
+            this.gunaLinePanel3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaLinePanel3.LineBottom = 1;
+            this.gunaLinePanel3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(27)))), ((int)(((byte)(16)))));
+            this.gunaLinePanel3.LineLeft = 1;
+            this.gunaLinePanel3.LineRight = 1;
+            this.gunaLinePanel3.LineStyle = System.Windows.Forms.BorderStyle.None;
+            this.gunaLinePanel3.LineTop = 1;
+            this.gunaLinePanel3.Location = new System.Drawing.Point(313, 451);
+            this.gunaLinePanel3.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.gunaLinePanel3.Name = "gunaLinePanel3";
+            this.gunaLinePanel3.Padding = new System.Windows.Forms.Padding(1);
+            this.gunaLinePanel3.Size = new System.Drawing.Size(200, 30);
+            this.gunaLinePanel3.TabIndex = 7;
             // 
-            // gunaTransfarantPictureBox1
+            // gunaLabel1
             // 
-            this.gunaTransfarantPictureBox1.BaseColor = System.Drawing.Color.Black;
-            this.gunaTransfarantPictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaTransfarantPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaTransfarantPictureBox1.Image")));
-            this.gunaTransfarantPictureBox1.Location = new System.Drawing.Point(205, 102);
-            this.gunaTransfarantPictureBox1.Name = "gunaTransfarantPictureBox1";
-            this.gunaTransfarantPictureBox1.Size = new System.Drawing.Size(80, 80);
-            this.gunaTransfarantPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.gunaTransfarantPictureBox1.TabIndex = 0;
-            this.gunaTransfarantPictureBox1.TabStop = false;
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gunaLabel1.Font = new System.Drawing.Font("Nirmala UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.gunaLabel1.Location = new System.Drawing.Point(1, 1);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(87, 25);
+            this.gunaLabel1.TabIndex = 0;
+            this.gunaLabel1.Text = "TulaWoW";
+            // 
+            // gtpbox_azerothcoreBtn
+            // 
+            this.gtpbox_azerothcoreBtn.BackColor = System.Drawing.Color.Transparent;
+            this.gtpbox_azerothcoreBtn.BaseColor = System.Drawing.Color.Black;
+            this.gtpbox_azerothcoreBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gtpbox_azerothcoreBtn.Image = ((System.Drawing.Image)(resources.GetObject("gtpbox_azerothcoreBtn.Image")));
+            this.gtpbox_azerothcoreBtn.Location = new System.Drawing.Point(932, 419);
+            this.gtpbox_azerothcoreBtn.Margin = new System.Windows.Forms.Padding(25);
+            this.gtpbox_azerothcoreBtn.Name = "gtpbox_azerothcoreBtn";
+            this.gtpbox_azerothcoreBtn.Size = new System.Drawing.Size(67, 62);
+            this.gtpbox_azerothcoreBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.gtpbox_azerothcoreBtn.TabIndex = 10;
+            this.gtpbox_azerothcoreBtn.TabStop = false;
+            this.gtpbox_azerothcoreBtn.Click += new System.EventHandler(this.gtpbox_azerothcoreBtn_Click);
+            // 
+            // gtpbox_ajustesBtn
+            // 
+            this.gtpbox_ajustesBtn.BackColor = System.Drawing.Color.Transparent;
+            this.gtpbox_ajustesBtn.BaseColor = System.Drawing.Color.Black;
+            this.gtpbox_ajustesBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gtpbox_ajustesBtn.Image = global::Cliente_TulaWoW.Properties.Resources.settings_black_24dp;
+            this.gtpbox_ajustesBtn.Location = new System.Drawing.Point(523, 459);
+            this.gtpbox_ajustesBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.gtpbox_ajustesBtn.Name = "gtpbox_ajustesBtn";
+            this.gtpbox_ajustesBtn.Size = new System.Drawing.Size(15, 15);
+            this.gtpbox_ajustesBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.gtpbox_ajustesBtn.TabIndex = 9;
+            this.gtpbox_ajustesBtn.TabStop = false;
+            this.gtpbox_ajustesBtn.MouseEnter += new System.EventHandler(this.gtpbox_ajustesBtn_MouseEnter);
+            this.gtpbox_ajustesBtn.MouseLeave += new System.EventHandler(this.gtpbox_ajustesBtn_MouseLeave);
             // 
             // gunaLinePanel2
             // 
@@ -174,80 +203,41 @@ namespace Cliente_TulaWoW.vista.user_controls
             this.gunaTransfarantPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaTransfarantPictureBox2.TabIndex = 0;
             this.gunaTransfarantPictureBox2.TabStop = false;
+            this.gunaTransfarantPictureBox2.Click += new System.EventHandler(this.gunaTransfarantPictureBox2_Click);
             // 
-            // gunaLinePanel3
+            // glpnl_video
             // 
-            this.gunaLinePanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.gunaLinePanel3.Controls.Add(this.gunaTransfarantPictureBox3);
-            this.gunaLinePanel3.Controls.Add(this.gunaLabel1);
-            this.gunaLinePanel3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaLinePanel3.LineBottom = 1;
-            this.gunaLinePanel3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(27)))), ((int)(((byte)(16)))));
-            this.gunaLinePanel3.LineLeft = 1;
-            this.gunaLinePanel3.LineRight = 1;
-            this.gunaLinePanel3.LineStyle = System.Windows.Forms.BorderStyle.None;
-            this.gunaLinePanel3.LineTop = 1;
-            this.gunaLinePanel3.Location = new System.Drawing.Point(313, 451);
-            this.gunaLinePanel3.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.gunaLinePanel3.Name = "gunaLinePanel3";
-            this.gunaLinePanel3.Padding = new System.Windows.Forms.Padding(1);
-            this.gunaLinePanel3.Size = new System.Drawing.Size(200, 30);
-            this.gunaLinePanel3.TabIndex = 7;
+            this.glpnl_video.BackColor = System.Drawing.Color.Transparent;
+            this.glpnl_video.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("glpnl_video.BackgroundImage")));
+            this.glpnl_video.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.glpnl_video.Controls.Add(this.gtpbox_playvideo);
+            this.glpnl_video.LineBottom = 1;
+            this.glpnl_video.LineColor = System.Drawing.Color.Black;
+            this.glpnl_video.LineLeft = 1;
+            this.glpnl_video.LineRight = 1;
+            this.glpnl_video.LineStyle = System.Windows.Forms.BorderStyle.None;
+            this.glpnl_video.LineTop = 1;
+            this.glpnl_video.Location = new System.Drawing.Point(100, 67);
+            this.glpnl_video.Margin = new System.Windows.Forms.Padding(0);
+            this.glpnl_video.Name = "glpnl_video";
+            this.glpnl_video.Padding = new System.Windows.Forms.Padding(1);
+            this.glpnl_video.Size = new System.Drawing.Size(500, 281);
+            this.glpnl_video.TabIndex = 5;
             // 
-            // gunaTransfarantPictureBox3
+            // gtpbox_playvideo
             // 
-            this.gunaTransfarantPictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTransfarantPictureBox3.BaseColor = System.Drawing.Color.Black;
-            this.gunaTransfarantPictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("gunaTransfarantPictureBox3.Image")));
-            this.gunaTransfarantPictureBox3.Location = new System.Drawing.Point(183, 2);
-            this.gunaTransfarantPictureBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.gunaTransfarantPictureBox3.Name = "gunaTransfarantPictureBox3";
-            this.gunaTransfarantPictureBox3.Size = new System.Drawing.Size(14, 25);
-            this.gunaTransfarantPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.gunaTransfarantPictureBox3.TabIndex = 8;
-            this.gunaTransfarantPictureBox3.TabStop = false;
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gunaLabel1.Font = new System.Drawing.Font("Nirmala UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(1, 1);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(87, 25);
-            this.gunaLabel1.TabIndex = 0;
-            this.gunaLabel1.Text = "TulaWoW";
-            // 
-            // gtpbox_ajustesBtn
-            // 
-            this.gtpbox_ajustesBtn.BackColor = System.Drawing.Color.Transparent;
-            this.gtpbox_ajustesBtn.BaseColor = System.Drawing.Color.Black;
-            this.gtpbox_ajustesBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gtpbox_ajustesBtn.Image = ((System.Drawing.Image)(resources.GetObject("gtpbox_ajustesBtn.Image")));
-            this.gtpbox_ajustesBtn.Location = new System.Drawing.Point(523, 459);
-            this.gtpbox_ajustesBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.gtpbox_ajustesBtn.Name = "gtpbox_ajustesBtn";
-            this.gtpbox_ajustesBtn.Size = new System.Drawing.Size(15, 15);
-            this.gtpbox_ajustesBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.gtpbox_ajustesBtn.TabIndex = 9;
-            this.gtpbox_ajustesBtn.TabStop = false;
-            this.gtpbox_ajustesBtn.MouseEnter += new System.EventHandler(this.gunaTransfarantPictureBox4_MouseEnter);
-            // 
-            // gtpbox_azerothcoreBtn
-            // 
-            this.gtpbox_azerothcoreBtn.BackColor = System.Drawing.Color.Transparent;
-            this.gtpbox_azerothcoreBtn.BaseColor = System.Drawing.Color.Black;
-            this.gtpbox_azerothcoreBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gtpbox_azerothcoreBtn.Image = ((System.Drawing.Image)(resources.GetObject("gtpbox_azerothcoreBtn.Image")));
-            this.gtpbox_azerothcoreBtn.Location = new System.Drawing.Point(932, 419);
-            this.gtpbox_azerothcoreBtn.Margin = new System.Windows.Forms.Padding(25);
-            this.gtpbox_azerothcoreBtn.Name = "gtpbox_azerothcoreBtn";
-            this.gtpbox_azerothcoreBtn.Size = new System.Drawing.Size(67, 62);
-            this.gtpbox_azerothcoreBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.gtpbox_azerothcoreBtn.TabIndex = 10;
-            this.gtpbox_azerothcoreBtn.TabStop = false;
-            this.gtpbox_azerothcoreBtn.Click += new System.EventHandler(this.gtpbox_azerothcoreBtn_Click);
+            this.gtpbox_playvideo.BaseColor = System.Drawing.Color.Black;
+            this.gtpbox_playvideo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gtpbox_playvideo.Image = global::Cliente_TulaWoW.Properties.Resources.play;
+            this.gtpbox_playvideo.Location = new System.Drawing.Point(205, 102);
+            this.gtpbox_playvideo.Name = "gtpbox_playvideo";
+            this.gtpbox_playvideo.Size = new System.Drawing.Size(80, 80);
+            this.gtpbox_playvideo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.gtpbox_playvideo.TabIndex = 0;
+            this.gtpbox_playvideo.TabStop = false;
+            this.gtpbox_playvideo.Click += new System.EventHandler(this.gtpbox_playvideo_Click);
+            this.gtpbox_playvideo.MouseEnter += new System.EventHandler(this.gtpbox_playvideo_MouseEnter);
+            this.gtpbox_playvideo.MouseLeave += new System.EventHandler(this.gtpbox_playvideo_MouseLeave);
             // 
             // UCSeccionJuego
             // 
@@ -264,17 +254,16 @@ namespace Cliente_TulaWoW.vista.user_controls
             this.MinimumSize = new System.Drawing.Size(1024, 506);
             this.Name = "UCSeccionJuego";
             this.Size = new System.Drawing.Size(1024, 506);
-            this.glpnl_video.ResumeLayout(false);
-            this.glpnl_video.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).EndInit();
+            this.gunaLinePanel3.ResumeLayout(false);
+            this.gunaLinePanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gtpbox_azerothcoreBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gtpbox_ajustesBtn)).EndInit();
             this.gunaLinePanel2.ResumeLayout(false);
             this.gunaLinePanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox2)).EndInit();
-            this.gunaLinePanel3.ResumeLayout(false);
-            this.gunaLinePanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gtpbox_ajustesBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gtpbox_azerothcoreBtn)).EndInit();
+            this.glpnl_video.ResumeLayout(false);
+            this.glpnl_video.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gtpbox_playvideo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,10 +274,9 @@ namespace Cliente_TulaWoW.vista.user_controls
         private Guna.UI.WinForms.GunaLinePanel glpnl_video;
         private Guna.UI.WinForms.GunaLinePanel gunaLinePanel2;
         private Guna.UI.WinForms.GunaTransfarantPictureBox gunaTransfarantPictureBox2;
-        private Guna.UI.WinForms.GunaTransfarantPictureBox gunaTransfarantPictureBox1;
+        private Guna.UI.WinForms.GunaTransfarantPictureBox gtpbox_playvideo;
         private Guna.UI.WinForms.GunaLinePanel gunaLinePanel3;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaTransfarantPictureBox gunaTransfarantPictureBox3;
         private Guna.UI.WinForms.GunaTransfarantPictureBox gtpbox_ajustesBtn;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;

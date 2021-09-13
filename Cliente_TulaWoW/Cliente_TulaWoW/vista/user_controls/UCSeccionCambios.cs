@@ -31,12 +31,14 @@ namespace Cliente_TulaWoW.vista.user_controls
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            int change = customFlowLayoutPanel1.VerticalScroll.Value - customFlowLayoutPanel1.VerticalScroll.SmallChange * 30;
+            customFlowLayoutPanel1.AutoScrollPosition = new Point(0, change);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            int change = customFlowLayoutPanel1.VerticalScroll.Value + customFlowLayoutPanel1.VerticalScroll.SmallChange * 30;
+            customFlowLayoutPanel1.AutoScrollPosition = new Point(0,change);
         }
     }
 }

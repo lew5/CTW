@@ -180,5 +180,17 @@
   <ItemGroup>
     <None Include="Resources\btnHover.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_black_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_hover.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
