@@ -34,11 +34,9 @@ namespace Cliente_TulaWoW
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.customPanel1 = new Cliente_TulaWoW.CustomPanel();
             this.cpnl_seccionContenedor = new System.Windows.Forms.Panel();
-            this.ucSeccionJuego1 = new Cliente_TulaWoW.vista.user_controls.UCSeccionJuego();
             this.ucNavBar1 = new Cliente_TulaWoW.vista.user_controls.UCNavBar();
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.customPanel1.SuspendLayout();
-            this.cpnl_seccionContenedor.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -61,30 +59,12 @@ namespace Cliente_TulaWoW
             // cpnl_seccionContenedor
             // 
             this.cpnl_seccionContenedor.BackColor = System.Drawing.Color.Transparent;
-            this.cpnl_seccionContenedor.Controls.Add(this.ucSeccionJuego1);
             this.cpnl_seccionContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cpnl_seccionContenedor.Location = new System.Drawing.Point(0, 70);
             this.cpnl_seccionContenedor.Margin = new System.Windows.Forms.Padding(0);
             this.cpnl_seccionContenedor.Name = "cpnl_seccionContenedor";
             this.cpnl_seccionContenedor.Size = new System.Drawing.Size(1024, 506);
             this.cpnl_seccionContenedor.TabIndex = 1;
-            // 
-            // ucSeccionJuego1
-            // 
-            this.ucSeccionJuego1.AzerothcoreLink = "https://www.azerothcore.org";
-            this.ucSeccionJuego1.BackColor = System.Drawing.Color.Transparent;
-            this.ucSeccionJuego1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucSeccionJuego1.GamePath = "C:/wow/UltimoWoW esMX/Wow.exe";
-            this.ucSeccionJuego1.Location = new System.Drawing.Point(0, 0);
-            this.ucSeccionJuego1.Margin = new System.Windows.Forms.Padding(0);
-            this.ucSeccionJuego1.MaximumSize = new System.Drawing.Size(1024, 506);
-            this.ucSeccionJuego1.MinimumSize = new System.Drawing.Size(1024, 506);
-            this.ucSeccionJuego1.Name = "ucSeccionJuego1";
-            this.ucSeccionJuego1.Realmlist = "SET REALMLIST LOGON.CHROMIECRAFT.COM";
-            this.ucSeccionJuego1.RealmlistPath = "C:\\wow\\UltimoWoW esMX\\Data\\esMX\\realmlist.WTF";
-            this.ucSeccionJuego1.Size = new System.Drawing.Size(1024, 506);
-            this.ucSeccionJuego1.TabIndex = 0;
-            this.ucSeccionJuego1.VideoLink = "https://www.youtube.com/watch?v=Yqpk0MQ_QfY";
             // 
             // ucNavBar1
             // 
@@ -115,7 +95,6 @@ namespace Cliente_TulaWoW
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             this.customPanel1.ResumeLayout(false);
-            this.cpnl_seccionContenedor.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -126,6 +105,5 @@ namespace Cliente_TulaWoW
         private vista.user_controls.UCNavBar ucNavBar1;
         private Guna.UI.WinForms.GunaDragControl gunaDragControl1;
         private System.Windows.Forms.Panel cpnl_seccionContenedor;
-        private vista.user_controls.UCSeccionJuego ucSeccionJuego1;
     }
 }

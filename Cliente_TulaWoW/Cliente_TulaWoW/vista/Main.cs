@@ -35,6 +35,7 @@ namespace Cliente_TulaWoW
         public Main()
         {
             InitializeComponent();
+            mostrarSeccionUC<UCSeccionJuego>(cpnl_seccionContenedor);
             //this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             //this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
         }

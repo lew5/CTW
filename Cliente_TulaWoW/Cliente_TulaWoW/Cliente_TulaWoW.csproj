@@ -55,6 +55,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="test\tForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test\tForm.Designer.cs">
+      <DependentUpon>tForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test\tUCscroll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="test\tUCscroll.Designer.cs">
+      <DependentUpon>tUCscroll.cs</DependentUpon>
+    </Compile>
     <Compile Include="vista\custom\CustomFlowLayoutPanel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -126,6 +138,12 @@
     <Compile Include="vista\user_controls\UCShopItem_rc.Designer.cs">
       <DependentUpon>UCShopItem_rc.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="test\tForm.resx">
+      <DependentUpon>tForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test\tUCscroll.resx">
+      <DependentUpon>tUCscroll.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vista\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vista\user_controls\UCSeccionJuego.resx">
       <DependentUpon>UCSeccionJuego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\user_controls\UCSeccionTienda.resx">
+      <DependentUpon>UCSeccionTienda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vista\user_controls\UCShopItem.resx">
       <DependentUpon>UCShopItem.cs</DependentUpon>

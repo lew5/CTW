@@ -120,7 +120,7 @@ namespace Cliente_TulaWoW.vista.user_controls
             this.Controls.Add(this.glbl_ItemDesc);
             this.Controls.Add(this.glbl_ItemName);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(100, 0, 0, 0);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.MaximumSize = new System.Drawing.Size(200, 300);
             this.MinimumSize = new System.Drawing.Size(200, 300);
             this.Name = "UCShopItem";

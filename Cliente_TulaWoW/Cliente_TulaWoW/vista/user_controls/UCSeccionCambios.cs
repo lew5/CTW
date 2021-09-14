@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Cliente_TulaWoW.vista.user_controls
@@ -19,6 +13,7 @@ namespace Cliente_TulaWoW.vista.user_controls
             InitializeComponent();
             this.SetStyle(ControlStyles.SupportsTransparentBackColor, true);
             this.BackColor = Color.Transparent;
+            vsc = new Guna.UI.Lib.ScrollBar.PanelScrollHelper(customFlowLayoutPanel1,gunaVScrollBar1,true);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -27,18 +22,6 @@ namespace Cliente_TulaWoW.vista.user_controls
             uCChangelogCard.FechaCambio = "11/11/2020";
             uCChangelogCard.nuevoDetalleCambio("awa", "awAhora los Buffos duran más tiempo y gastan menos maná, así se fomenta darle buffos a los demás jugadores en el leveleo y que enserio haga una diferenciaAhora los Buffos duran más tiempo y gastan menos maná, así se fomenta darle buffos a los demás jugadores en el leveleo y que enserio haga una diferenciaAhora los Buffos duran más tiempo y gastan menos maná, así se fomenta darle buffos a los demás jugadores en el leveleo y que enserio haga una diferenciae");
             customFlowLayoutPanel1.Controls.Add(uCChangelogCard);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            int change = customFlowLayoutPanel1.VerticalScroll.Value - customFlowLayoutPanel1.VerticalScroll.SmallChange * 30;
-            customFlowLayoutPanel1.AutoScrollPosition = new Point(0, change);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            int change = customFlowLayoutPanel1.VerticalScroll.Value + customFlowLayoutPanel1.VerticalScroll.SmallChange * 30;
-            customFlowLayoutPanel1.AutoScrollPosition = new Point(0,change);
         }
     }
 }

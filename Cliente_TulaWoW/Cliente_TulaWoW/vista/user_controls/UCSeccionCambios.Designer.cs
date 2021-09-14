@@ -30,8 +30,7 @@ namespace Cliente_TulaWoW.vista.user_controls
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.gunaVScrollBar1 = new Guna.UI.WinForms.GunaVScrollBar();
             this.customFlowLayoutPanel1 = new Cliente_TulaWoW.CustomFlowLayoutPanel();
             this.SuspendLayout();
             // 
@@ -45,28 +44,22 @@ namespace Cliente_TulaWoW.vista.user_controls
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // gunaVScrollBar1
             // 
-            this.button2.Location = new System.Drawing.Point(930, 33);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "up";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(930, 62);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "down";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.gunaVScrollBar1.LargeChange = 10;
+            this.gunaVScrollBar1.Location = new System.Drawing.Point(84, 33);
+            this.gunaVScrollBar1.Maximum = 100;
+            this.gunaVScrollBar1.Name = "gunaVScrollBar1";
+            this.gunaVScrollBar1.ScrollIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.gunaVScrollBar1.Size = new System.Drawing.Size(10, 473);
+            this.gunaVScrollBar1.TabIndex = 4;
+            this.gunaVScrollBar1.ThumbColor = System.Drawing.Color.Chocolate;
+            this.gunaVScrollBar1.ThumbHoverColor = System.Drawing.Color.Peru;
+            this.gunaVScrollBar1.ThumbPressedColor = System.Drawing.Color.SaddleBrown;
             // 
             // customFlowLayoutPanel1
             // 
+            this.customFlowLayoutPanel1.AutoScroll = true;
             this.customFlowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.customFlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customFlowLayoutPanel1.Location = new System.Drawing.Point(100, 30);
@@ -78,8 +71,7 @@ namespace Cliente_TulaWoW.vista.user_controls
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.gunaVScrollBar1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.customFlowLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(0);
@@ -96,7 +88,6 @@ namespace Cliente_TulaWoW.vista.user_controls
 
         private CustomFlowLayoutPanel customFlowLayoutPanel1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private Guna.UI.WinForms.GunaVScrollBar gunaVScrollBar1;
     }
 }
