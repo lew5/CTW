@@ -20,11 +20,11 @@ namespace Cliente_TulaWoW
                 p.Controls.Add(uc);
                 uc.Dock = DockStyle.Fill;
                 uc.BringToFront();
-                foreach (Control c in p.Controls)
-                    if (uc.Name != c.Name)
-                    {
-                        c.Dispose();
-                    }
+                //foreach (Control c in p.Controls)
+                //    if (uc.Name != c.Name)
+                //    {
+                //        c.Dispose();
+                //    }
             }
             else
             {
