@@ -18,10 +18,10 @@ namespace Cliente_TulaWoW.vista.user_controls
 
         private void button1_Click(object sender, EventArgs e)
         {
-            UCChangelogCard uCChangelogCard = new UCChangelogCard();
-            uCChangelogCard.FechaCambio = "11/11/2020";
-            uCChangelogCard.nuevoDetalleCambio("awa", "awAhora los Buffos duran más tiempo y gastan menos maná, así se fomenta darle buffos a los demás jugadores en el leveleo y que enserio haga una diferenciaAhora los Buffos duran más tiempo y gastan menos maná, así se fomenta darle buffos a los demás jugadores en el leveleo y que enserio haga una diferenciaAhora los Buffos duran más tiempo y gastan menos maná, así se fomenta darle buffos a los demás jugadores en el leveleo y que enserio haga una diferenciae");
-            customFlowLayoutPanel1.Controls.Add(uCChangelogCard);
+            UCChangelogCard_2 uCChangelogCard2 = new UCChangelogCard_2();
+            uCChangelogCard2.FechaCambio = "11/11/2020";
+            uCChangelogCard2.nuevoCambio("awa", "awAhora los Buffos duran más tiempo y gastan menos maná, así se fomenta darle buffos a los demás jugadores en el leveleo y que enserio haga una diferenciaAhora los Buffos duran más tiempo y gastan menos maná, así se fomenta darle buffos a los demás jugadores en el leveleo y que enserio haga una diferenciaAhora los Buffos duran más tiempo y gastan menos maná, así se fomenta darle buffos a los demás jugadores en el leveleo y que enserio haga una diferenciae");
+            customFlowLayoutPanel1.Controls.Add(uCChangelogCard2);
         }
     }
 }

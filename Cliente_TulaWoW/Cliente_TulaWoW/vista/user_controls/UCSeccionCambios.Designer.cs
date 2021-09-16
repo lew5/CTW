@@ -36,7 +36,7 @@ namespace Cliente_TulaWoW.vista.user_controls
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(930, 91);
+            this.button1.Location = new System.Drawing.Point(487, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -47,11 +47,11 @@ namespace Cliente_TulaWoW.vista.user_controls
             // gunaVScrollBar1
             // 
             this.gunaVScrollBar1.LargeChange = 10;
-            this.gunaVScrollBar1.Location = new System.Drawing.Point(84, 33);
+            this.gunaVScrollBar1.Location = new System.Drawing.Point(930, 30);
             this.gunaVScrollBar1.Maximum = 100;
             this.gunaVScrollBar1.Name = "gunaVScrollBar1";
-            this.gunaVScrollBar1.ScrollIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.gunaVScrollBar1.Size = new System.Drawing.Size(10, 473);
+            this.gunaVScrollBar1.ScrollIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.gunaVScrollBar1.Size = new System.Drawing.Size(10, 463);
             this.gunaVScrollBar1.TabIndex = 4;
             this.gunaVScrollBar1.ThumbColor = System.Drawing.Color.Chocolate;
             this.gunaVScrollBar1.ThumbHoverColor = System.Drawing.Color.Peru;
@@ -62,9 +62,9 @@ namespace Cliente_TulaWoW.vista.user_controls
             this.customFlowLayoutPanel1.AutoScroll = true;
             this.customFlowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.customFlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customFlowLayoutPanel1.Location = new System.Drawing.Point(100, 30);
+            this.customFlowLayoutPanel1.Location = new System.Drawing.Point(90, 30);
             this.customFlowLayoutPanel1.Name = "customFlowLayoutPanel1";
-            this.customFlowLayoutPanel1.Size = new System.Drawing.Size(824, 476);
+            this.customFlowLayoutPanel1.Size = new System.Drawing.Size(844, 466);
             this.customFlowLayoutPanel1.TabIndex = 0;
             // 
             // UCSeccionCambios
@@ -78,7 +78,7 @@ namespace Cliente_TulaWoW.vista.user_controls
             this.MaximumSize = new System.Drawing.Size(1024, 506);
             this.MinimumSize = new System.Drawing.Size(1024, 506);
             this.Name = "UCSeccionCambios";
-            this.Padding = new System.Windows.Forms.Padding(100, 30, 100, 0);
+            this.Padding = new System.Windows.Forms.Padding(90, 30, 90, 10);
             this.Size = new System.Drawing.Size(1024, 506);
             this.ResumeLayout(false);
 

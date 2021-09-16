@@ -90,11 +90,23 @@
     <Compile Include="vista\user_controls\UCCambio.Designer.cs">
       <DependentUpon>UCCambio.cs</DependentUpon>
     </Compile>
+    <Compile Include="vista\user_controls\UCCambio_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vista\user_controls\UCCambio_2.Designer.cs">
+      <DependentUpon>UCCambio_2.cs</DependentUpon>
+    </Compile>
     <Compile Include="vista\user_controls\UCChangelogCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="vista\user_controls\UCChangelogCard.Designer.cs">
       <DependentUpon>UCChangelogCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\user_controls\UCChangelogCard_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="vista\user_controls\UCChangelogCard_2.Designer.cs">
+      <DependentUpon>UCChangelogCard_2.cs</DependentUpon>
     </Compile>
     <Compile Include="vista\user_controls\UCNavBar.cs">
       <SubType>UserControl</SubType>
@@ -160,8 +172,14 @@
     <EmbeddedResource Include="vista\user_controls\UCCambio.resx">
       <DependentUpon>UCCambio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vista\user_controls\UCCambio_2.resx">
+      <DependentUpon>UCCambio_2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vista\user_controls\UCChangelogCard.resx">
       <DependentUpon>UCChangelogCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\user_controls\UCChangelogCard_2.resx">
+      <DependentUpon>UCChangelogCard_2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vista\user_controls\UCNavBar.resx">
       <DependentUpon>UCNavBar.cs</DependentUpon>
